@@ -151,9 +151,10 @@ High speed trains require a lightweight design too allow fuel efficiency and rea
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const AbstractCount = displayWordCount("Abstract");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const IntroductionCount = displayWordCount("Introduction");
+    const AnalysisandDiscussionCount = displayWordCount("Analysis and Discussion")
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + AnalysisCount;
+    const totalWordCount = AbstractCount + IntroductionCount + AnalysisandDiscussionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
